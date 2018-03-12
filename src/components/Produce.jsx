@@ -6,6 +6,15 @@ const Produce =(props)=>{
   const crops = props.selection;
   return(
     <div>
+      <style jsx>{`
+        h3{
+          text-align:center;
+        }
+
+        ul{
+          border: 2px solid red;
+        }
+      `}</style>
       <h3>{props.month}</h3>
       <ul>
         {crops.map((crop, index)=>
@@ -14,7 +23,7 @@ const Produce =(props)=>{
             crop={crop}
           />
         )}
-      </ul>    
+      </ul>
     </div>
   );
 };

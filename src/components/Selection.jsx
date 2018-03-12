@@ -8,7 +8,8 @@ const Selection=(props)=>{
 
         li{
           color: green;
-          list-decoration: none;
+          list-style-type:none;
+          text-align:center;
         }
       `}</style>
       <li>{props.crop}</li>
